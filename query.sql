@@ -52,13 +52,25 @@ INSERT INTO history (user_id, score, score_date) VALUES
 (6, 100, '2020-01-01');
 
 -- read name, age, score, score_date where user_id = 1
-SELECT name, age, score, score_date 
+SELECT name nama, age umur, score skor, score_date tanggal_skor 
 FROM bio 
 INNER JOIN history ON bio.user_id = history.user_id 
 WHERE bio.user_id = 1;
 
+-- read name, age, score, score_date where user_id = 2
+SELECT name nama, age umur, score skor, score_date tanggal_skor 
+FROM bio 
+INNER JOIN history ON bio.user_id = history.user_id 
+WHERE bio.user_id = 2;
+
 -- update table bio name and age where id = 1
 UPDATE bio SET name = 'Faisal', age = 19 WHERE id = 1;
+
+-- update table bio name and age where id = 2
+UPDATE bio SET name = 'Lifan', age = 30 WHERE id = 2;
+
+-- update table history score where id = 2
+UPDATE bio SET score = 30 WHERE id = 2;
 
 -- delete history where user_id = 1
 DELETE FROM history WHERE user_id = 1;
