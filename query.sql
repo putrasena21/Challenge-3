@@ -70,7 +70,7 @@ UPDATE bio SET name = 'Faisal', age = 19 WHERE id = 1;
 UPDATE bio SET name = 'Lifan', age = 30 WHERE id = 2;
 
 -- update table history score where id = 2
-UPDATE bio SET score = 30 WHERE id = 2;
+UPDATE history SET score = 30 WHERE id = 2;
 
 -- delete history where user_id = 1
 DELETE FROM history WHERE user_id = 1;
